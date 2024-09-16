@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background: #000000;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 400px; /* Увеличенная ширина фотографии */
+    height: 600px; /* Увеличенная высота для вертикального формата */
+    border-radius: 10%; /* Немного закругленные углы */
+    border: 2px solid #ffffff; /* Белая рамка вокруг фотографии */
+    margin: 0 20px; /* Уменьшенные отступы слева и справа */
+    object-fit: cover; /* Обрезка изображения по центру */
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px; /* Отступы слева и справа от иконок */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px 0; /* Отступ между иконками */
+}
+
+.social-icons img {
+    width: 100px; /* Размер иконок (более качественные) */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    filter: brightness(0) invert(1); /* Изменение цвета иконок на белый */
+    transition: transform 0.2s, filter 0.2s; /* Плавный переход для увеличения и изменения цвета */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Увеличение иконок при наведении */
+    filter: brightness(0) invert(0.5); /* Изменение цвета при наведении (полу-прозрачный белый) */
+}
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
